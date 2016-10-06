@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 
     nodemon: {
       dev: {
-        script: '--watch app --watch server.js',
+        script: '--watch server.js',
         options: {
           env: {
             PORT: '3300'
