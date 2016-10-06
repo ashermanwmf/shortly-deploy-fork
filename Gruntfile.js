@@ -23,14 +23,15 @@ module.exports = function(grunt) {
 
     nodemon: {
       dev: {
-        script: '--watch server.js',
+        script: 'server.js',
         options: {
           env: {
             PORT: '3300'
           },
           cwd: __dirname,
           ignore: ['node_modules/**'],
-          watch: ['server'] 
+          watch: ['server'],
+          legacyWatch: true 
         }
       }
     },
