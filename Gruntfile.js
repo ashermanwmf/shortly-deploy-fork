@@ -112,10 +112,9 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('deploy', [
-    // add your deploy tasks here
+  grunt.registerTask('deploy', function(n) {
     grunt.task.run(['build', 'upload']);
-  ]);
+  });
 
 
 };
